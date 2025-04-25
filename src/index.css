@@ -1,0 +1,55 @@
+@charset "UTF-8";
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  --light-colors-white: #fbfbfb;
+  --light-colors-blue-light: rgb(183 204 231);
+  --light-colors-gray: #b1b1b1;
+  --dark-colors-gray: #767676;
+  --dark-colors-black: #000000;
+  --dark-colors-blue: #5b5ce6;
+
+  --fs8: 8px;
+  --fs12: 12px;
+  --fs16: 16px;
+  --fs20: 20px;
+  --fs26: 24px;
+  --fs33: 33px;
+  --fs64: 64px;
+
+  line-height: 1.6;
+}
+
+body {
+  background-color: var(--light-colors-blue-light);
+}
+
+main {
+  max-width: 1200px;
+  width: calc(100% - 4rem);
+  padding: 100px 0 var(--fs33);
+  margin: auto;
+}
+main h2 {
+  font-size: var(--fs33);
+  color: var(--dark-colors-black);
+}
+h3 {
+  font-size: var(--fs26);
+}
+input,
+button {
+  border: none;
+}
+i.bi {
+  font-size: 24px;
+}

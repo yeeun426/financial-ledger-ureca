@@ -1,0 +1,12 @@
+.HistoryCon > ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fs8);
+}
+.HistoryCon > ul > li {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--fs20);
+  background: var(--light-colors-white);
+  padding: var(--fs12);
+}

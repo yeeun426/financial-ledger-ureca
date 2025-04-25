@@ -1,0 +1,12 @@
+.MoneyHistoryCon {
+  margin-top: var(--fs64);
+}
+@media (min-width: 680px) {
+  .MoneyHistoryCon {
+    display: flex;
+    gap: var(--fs64);
+  }
+  .MoneyHistoryCon > div {
+    flex-grow: 1;
+  }
+}

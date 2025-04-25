@@ -1,0 +1,22 @@
+.balanceCon {
+  display: flex;
+  flex-direction: column;
+}
+.balanceCon > div {
+  display: flex;
+  /* border: 1px solid red; */
+  justify-content: space-between;
+  place-items: center;
+}
+.balanceCon > div > h2 > span {
+  font-size: var(--fs16);
+  margin-bottom: var(--fs12);
+}
+.balanceItem {
+  margin-top: var(--fs16);
+  border-top: 2px solid white;
+  padding-top: var(--fs12);
+}
+.balanceItem > * {
+  color: var(--dark-colors-gray);
+}

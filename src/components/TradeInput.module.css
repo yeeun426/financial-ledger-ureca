@@ -1,0 +1,57 @@
+.tradeCon {
+  background-color: var(--light-colors-white);
+  border-radius: 100px;
+  box-shadow: 4px 4px 10px #b1b1b1;
+  padding: 45px var(--fs64);
+  overflow: hidden;
+  position: relative;
+  overflow: visible;
+}
+.tradeCon ul {
+  display: flex;
+  border: rgb(185 205 232);
+  gap: var(--fs33);
+}
+.tradeCon button {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  font-size: var(--fs16);
+  padding: var(--fs12) var(--fs26);
+  background-color: var(--dark-colors-blue);
+  border-radius: var(--fs64);
+  color: var(--light-colors-white);
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+.tradeCon button:hover {
+  background-color: var(--light-colors-gray);
+}
+.tradeCon > ul > li {
+  flex-grow: 1;
+  width: 100%;
+  font-size: var(--fs20);
+  display: flex;
+  flex-direction: column;
+  gap: var(--fs8);
+}
+.tradeCon > ul > li > *:nth-child(2) {
+  width: 100%;
+  border-radius: var(--fs8);
+  border: 1px solid var(--light-colors-blue-light);
+  font-size: var(--fs16);
+  padding: var(--fs8);
+}
+.tradeTitle {
+  margin-bottom: var(--fs16);
+}
+.icon {
+  box-shadow: 3px 3px 4px #b1b1b18f;
+  width: max-content;
+  padding: var(--fs16);
+  border-radius: 100px;
+  position: absolute;
+  background-color: var(--light-colors-white);
+  top: 1px;
+  left: 0px;
+}
