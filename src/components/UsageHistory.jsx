@@ -5,8 +5,6 @@ const UsageHistory = () => {
   const moneyHistData = useSelector(state => state.money)
   const { transactions } = moneyHistData
 
-  console.log(transactions)
-
   return (
     <div className={css.HistoryCon}>
       <h3>내역</h3>

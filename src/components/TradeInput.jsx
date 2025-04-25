@@ -27,7 +27,7 @@ const TradeInput = () => {
   return (
     <div className={css.tradeCon}>
       <h3 className={css.tradeTitle}>소비 내역을 입력해 주세요.</h3>
-      <form>
+      <form onSubmit={handleAddList}>
         <ul>
           <li>
             <h4>수입/지출</h4>
@@ -62,9 +62,7 @@ const TradeInput = () => {
         <div className={css.icon}>
           <i className="bi bi-pencil"></i>
         </div>
-        <button type="submit" onClick={handleAddList}>
-          등록하기
-        </button>
+        <button type="submit">등록하기</button>
       </form>
     </div>
   )
