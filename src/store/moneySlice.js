@@ -26,7 +26,10 @@ export const moneySlice = createSlice({
     addUsage: (state, action) => {
       state.transactions.push(action.payload)
     },
+    deleteUsage: (state, action) => {
+      state.transactions = state.transactions.filter(item => item.id !== action.payload)
+    },
   },
 })
 
-export const { addUsage } = moneySlice.actions
+export const { addUsage, deleteUsage } = moneySlice.actions

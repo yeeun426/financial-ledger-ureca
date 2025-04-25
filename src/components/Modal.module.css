@@ -1,0 +1,52 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+.container {
+  opacity: 0;
+  transform: translateY(-50px);
+  background-color: var(--dark-colors-white-dark);
+  transition:
+    transform 0.3s,
+    opacity 0.1s;
+  padding: var(--fs33);
+  border-radius: var(--fs16);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.modal.active .container {
+  transform: translateY(0px);
+  opacity: 1;
+  background-color: var(--light-colors-white);
+}
+.container p {
+  font-size: var(--fs26);
+  margin-bottom: var(--fs26);
+}
+.container > div {
+  display: flex;
+  gap: var(--fs8);
+}
+.container > div > button {
+  background-color: var(--dark-colors-blue);
+  padding: var(--fs8) var(--fs16);
+  color: white;
+  font-size: var(--fs16);
+  border-radius: var(--fs20);
+  cursor: pointer;
+  flex-grow: 1;
+}
+.btnDelete:hover {
+  color: var(--dark-colors-red);
+}
+.btnClose:hover {
+  color: var(--light-colors-blue-light);
+}
