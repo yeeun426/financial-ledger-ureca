@@ -43,6 +43,7 @@ main {
 main h2 {
   font-size: var(--fs33);
   color: var(--dark-colors-black);
+  margin-bottom: 33px;
 }
 h3 {
   font-size: var(--fs26);
