@@ -22,6 +22,10 @@ const TradeInput = () => {
       date: new Date().toISOString().slice(0, 10),
     }
     dispatch(addUsage(newList))
+
+    setIncome('income')
+    setDescription('')
+    setAmount('')
   }
 
   return (
