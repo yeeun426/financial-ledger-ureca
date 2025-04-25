@@ -13,7 +13,7 @@ const TradeInput = () => {
 
   const handleAddList = e => {
     e.preventDefault()
-    const maxId = transactions.length > 0 ? transactions[transactions.length - 1].id : 0
+    const maxId = transactions.length > 0 ? transactions[0].id : 0
     const newList = {
       id: maxId + 1,
       description: description,
@@ -59,6 +59,7 @@ const TradeInput = () => {
               required
               type="number"
               value={amount}
+              min="1"
               onChange={e => setAmount(Number(e.target.value))}
             />
           </li>

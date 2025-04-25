@@ -42,3 +42,8 @@
 .expense .price::before {
   content: '-';
 }
+@media (max-width: 680px) {
+  .HistoryCon {
+    margin-top: 64px;
+  }
+}

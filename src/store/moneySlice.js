@@ -17,7 +17,7 @@ export const moneySlice = createSlice({
   },
   reducers: {
     addUsage: (state, action) => {
-      state.transactions.push(action.payload)
+      state.transactions = [action.payload, ...state.transactions]
       localStorage.setItem('transactions', JSON.stringify(state.transactions))
     },
     deleteUsage: (state, action) => {
