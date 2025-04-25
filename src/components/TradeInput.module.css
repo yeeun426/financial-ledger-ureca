@@ -27,7 +27,7 @@
 .tradeCon button:hover {
   background-color: var(--light-colors-gray);
 }
-.tradeCon > ul > li {
+.tradeCon ul > li {
   flex-grow: 1;
   width: 100%;
   font-size: var(--fs20);
@@ -35,7 +35,7 @@
   flex-direction: column;
   gap: var(--fs8);
 }
-.tradeCon > ul > li > *:nth-child(2) {
+.tradeCon ul > li > *:nth-child(2) {
   width: 100%;
   border-radius: var(--fs8);
   border: 1px solid var(--light-colors-blue-light);

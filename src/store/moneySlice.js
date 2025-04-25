@@ -22,4 +22,11 @@ export const moneySlice = createSlice({
   initialState: {
     transactions: transactions,
   },
+  reducers: {
+    addUsage: (state, action) => {
+      state.transactions.push(action.payload)
+    },
+  },
 })
+
+export const { addUsage } = moneySlice.actions
