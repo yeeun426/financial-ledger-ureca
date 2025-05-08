@@ -23,6 +23,7 @@ React의 기본 개념, 상태 관리, 로컬 저장소 활용 능력을 평가�
 - React
 - CSS
 - LocalStorage API
+- Redux Toolkit
 
 ## 핵심 기능 요구사항
 
